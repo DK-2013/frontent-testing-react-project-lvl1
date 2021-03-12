@@ -10,6 +10,7 @@
     "page-loader": "src/bin/pageLoader.js"
   },
   "jest": {
+    "testEnvironment": "node",
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     }
@@ -29,6 +30,8 @@
   },
   "homepage": "https://github.com/DK-2013/frontent-testing-react-project-lvl1#readme",
   "dependencies": {
+    "axios": "^0.21.1",
+    "commander": "^7.1.0",
     "yarn": "^1.22.10"
   },
   "devDependencies": {

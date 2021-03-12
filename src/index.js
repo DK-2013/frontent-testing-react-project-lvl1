@@ -1,1 +1,1 @@
-export { default } from './pageLoader';
+export { default, buildName } from './pageLoader';
