@@ -1,0 +1,40 @@
+{
+  "name": "@hexlet/code",
+  "version": "0.0.1",
+  "description": "download pages from net",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "page-loader": "src/bin/pageLoader.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DK-2013/frontent-testing-react-project-lvl1.git"
+  },
+  "keywords": [
+    "loader",
+    "html"
+  ],
+  "author": "Dmitry Kizilov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DK-2013/frontent-testing-react-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/DK-2013/frontent-testing-react-project-lvl1#readme",
+  "dependencies": {
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}
