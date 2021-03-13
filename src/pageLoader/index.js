@@ -3,11 +3,11 @@ import { join } from 'path';
 import { writeFile } from 'fs/promises';
 
 export const buildName = (link) => {
-  const { hostname, pathname } = new URL(link);
-  // todo search params, hash
-  const path = `${pathname}.html`;
-  return [...hostname.split('.'), ...path.split('/')]
-    .filter((el) => el).join('-');
+  const { hostname } = new URL(link);
+  const idx = link.indexOf(hostname);
+  const path = link.substr(idx);
+  const baseName = path.replace(/[^\d\w]/g, '-');
+  return `${baseName}.html`;
 };
 
 export default async (url, dest = __dirname) => {
