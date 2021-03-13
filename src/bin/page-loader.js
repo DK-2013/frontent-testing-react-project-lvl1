@@ -9,9 +9,8 @@ program.description('Load html page and save local')
     url: 'url for download html page',
     dest: 'path to store downloaded page',
   })
-  .action((url, dest = __dirname) => {
-    // eslint-disable-next-line no-console
-    console.log('page stored to: ', pageLoader(url, dest));
+  .action(async (url, dest = __dirname) => {
+    console.log('page stored to: ', await pageLoader(url, dest));
   });
 
 program.parse(process.argv);

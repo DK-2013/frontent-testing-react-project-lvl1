@@ -1,19 +1,19 @@
 install:
-	npm install
+	yarn
 
 build:
 	rm -rf dist
-	npm run build
+	yarn build
 
 test:
-	npm test
+	yarn test
 
 publish:
 	npm publish --dry-run
 
 republish:
 	npm publish --dry-run
-	npm link
+	yarn link
 
 lint:
 	npx eslint .
