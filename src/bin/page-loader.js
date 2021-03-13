@@ -9,7 +9,7 @@ program.description('Load html page and save local')
     url: 'url for download html page',
     dest: 'path to store downloaded page',
   })
-  .action(async (url, dest = __dirname) => {
+  .action(async (url, dest = process.cwd()) => {
     console.log('page stored to: ', await pageLoader(url, dest));
   });
 
